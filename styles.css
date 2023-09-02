@@ -6,12 +6,13 @@ body, h1, h2, h3, p, ul, li {
 
 /* Style the navbar */
 .navbar {
-   
+   position: fixed;
+   top: 0;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: blue;
+    background-color: #767575;
     
     color: white;
 }
@@ -44,7 +45,8 @@ body, h1, h2, h3, p, ul, li {
 
 /* Style the navigation links */
 .nav-links {
-    background-color: aqua;
+    margin-top: 150px;
+    background-color: #b0b0b0;
     list-style: none;
     display: flex;
     padding: 10px;
@@ -183,3 +185,60 @@ footer {
     background: #125688;
     color: white;
   }
+
+  .fa-whatsapp{
+    background-color:#2aff00b0;
+    color: white;
+  }
+
+
+  /* Mobile responsive styles */
+@media (max-width: 768px) {
+    .navbar {
+        
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .logo img {
+        width: 80px; /* Adjust the size for smaller screens */
+        height: 80px;
+        border-radius: 40px;
+    }
+
+    .company-name {
+        font-size: 35px; /* Adjust the font size for smaller screens */
+    }
+
+    .nav-links {
+        margin-top: 150px; /* Adjust the spacing */
+        background-color: #b0b0b0;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .nav-links li {
+        margin-right: 0;
+        margin-bottom: 10px; /* Adjust the spacing between list items */
+    }
+
+    .about-us,
+    .contact-us {
+        padding: 10px; /* Adjust padding */
+    }
+
+    .address {
+        flex-basis: 100%; /* Full width for address */
+    }
+
+    .social-media {
+        flex-basis: 100%; /* Full width for social media icons */
+        text-align: center;
+    }
+}

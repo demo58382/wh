@@ -1,0 +1,331 @@
+/* Reset some default styles */
+body, h1 {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Basic styling for header */
+.navbar {
+    position: fixed;
+    top: 0;
+     width: 100%;
+     height: 119px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     background-color: #767575;
+     
+     color: white;
+ }
+ 
+ /* Style the logo */
+ .logo{
+     display: flex;
+ }
+ 
+ .logo div{
+     padding-left: 20px;
+     padding-top: 10px;
+     justify-content: center;
+ }
+ 
+ .logo img {
+   width: 100px; /* Adjust the size as needed */
+   height: 100px;
+   padding: 25px;
+ 
+   border-radius: 75px;
+ }
+ 
+ /* Style the company name */
+ .company-name {
+     margin: 6px;
+     font-size: 110px;
+     font-weight: bold; 
+ }
+ 
+ /* Style the navigation links */
+ .nav-links {
+     margin-top: 150px;
+     background-color: #b0b0b0;
+     list-style: none;
+     display: flex;
+     padding: 10px;
+ }
+ 
+ .nav-links li {
+     margin-right: 20px;
+ }
+ 
+ .nav-links a {
+     text-decoration: none;
+     color: black;
+     font-weight: bold;
+     transition: color 0.3s;
+ }
+ 
+ .nav-links a:hover {
+     color: greenyellow; /* Change to your desired hover color */
+ }
+ 
+
+/* Grid-based photo gallery layout */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Style for individual photos */
+.photo {
+    overflow: hidden;
+    border: 1px solid #ddd;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: 250px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .gallery {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        padding: 10px;
+    }
+
+    .navbar {
+      
+        /* flex-direction: column; */
+        align-items: center;
+    }
+
+    .logo {
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .logo img {
+        width: 50px; /* Adjust the size for smaller screens */
+        height: 50px;
+        padding: 10px;
+    }
+
+    .company-name {
+        font-size: 25px; /* Adjust the font size for smaller screens */
+        margin-left: -10px;
+        margin-top: 10px;
+    }
+
+    .nav-links {
+    
+        margin-top:150px;
+        background-color: #b0b0b0;
+        /* flex-direction: column; */
+        gap: 15px;
+        align-items: center;
+        padding-bottom: 0px;
+    }
+
+    .nav-links li {
+        margin-right: 0;
+        margin-bottom: 10px; /* Adjust the spacing between list items */
+    }
+
+    .about-us,
+    .contact-us {
+        padding: 10px; /* Adjust padding */
+    }
+
+    .address {
+        flex-basis: 100%; /* Full width for address */
+    }
+
+    .social-media {
+        flex-basis: 100%; /* Full width for social media icons */
+        text-align: center;
+    }
+}
+
+
+/* Previous styles... */
+
+/* Additional styles for full-screen overlay */
+.fullscreen-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.close-button {
+    color: #fff;
+    font-size: 30px;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    cursor: pointer;
+}
+
+.fullscreen-image {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+/* Adjustments to footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Previous styles... */
+
+/* Adjustments for contact info in nav bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 20px;
+}
+
+.contact-info p {
+    margin: 0;
+    font-size: 16px;
+}
+
+.contact-info a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+/* ---------------------------------- */
+.about-us {
+    background-color: #f3abab;
+    color: white;
+    padding: 20px;
+    margin: 0px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+}
+
+.contact-us {
+    background-color: #767575;
+  color: white;
+    padding: 20px;
+    margin: 0px;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.address {
+    flex-basis: 60%;
+}
+
+.address a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.address h3,
+.social-media h3 {
+    margin-bottom: 10px;
+}
+
+.social-media {
+    flex-basis: 30%;
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+}
+
+.social-media ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+.social-media img {
+    width: 40px;
+    height: 40px;
+}
+
+
+/* ----------------------- */
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  
+  .fa-google {
+    background: #dd4b39;
+    color: white;
+  }
+  
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+  
+  .fa-youtube {
+    background: #bb0000;
+    color: white;
+  }
+  
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+
+  .fa-whatsapp{
+    background-color:#2aff00b0;
+    color: white;
+  }
+

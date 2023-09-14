@@ -4,6 +4,10 @@ body, h1, h2, h3, p, ul, li {
     padding: 0;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 /* Style the navbar */
 .navbar {
    position: fixed;

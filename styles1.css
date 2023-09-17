@@ -5,6 +5,10 @@ body, h1 {
     overflow-x: hidden;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
+
 
 /* Basic styling for header */
 .navbar {

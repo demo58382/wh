@@ -5,6 +5,10 @@ body, h1, h2, h3, p, ul, li {
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 /* Style the navbar */
 .navbar {
    position: fixed;
